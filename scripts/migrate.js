@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import { sql } from '@vercel/postgres';
 import { readFile } from 'node:fs/promises';
 const schema = await readFile(new URL('../database/schema.sql', import.meta.url), 'utf8');

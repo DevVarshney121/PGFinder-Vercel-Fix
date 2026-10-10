@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import { sql } from '@vercel/postgres';
 const areas = ['Knowledge Park','Pari Chowk','Alpha / Beta','Techzone','Greater Noida West'];
 for (const [i, name] of areas.entries()) await sql`INSERT INTO areas (name, sort_order) VALUES (${name}, ${i}) ON CONFLICT (name) DO NOTHING`;

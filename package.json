@@ -14,11 +14,14 @@
     "@vercel/blob": "^1.1.1",
     "@vercel/postgres": "^0.10.0",
     "bcryptjs": "^2.4.3",
+    "dotenv": "^18.0.7",
     "jose": "^5.9.6",
     "zod": "^3.23.8"
   },
   "devDependencies": {
     "vercel": "^41.1.0"
   },
-  "engines": { "node": ">=20" }
+  "engines": {
+    "node": ">=20"
+  }
 }
